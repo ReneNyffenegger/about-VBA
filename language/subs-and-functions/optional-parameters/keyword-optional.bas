@@ -1,4 +1,4 @@
-' runVBAFilesInOffice.vbs -word %CD%\keyword-optional -c main 
+' runVBAFilesInOffice.vbs -word %CD%\keyword-optional -c main
 
 sub main() 
 
