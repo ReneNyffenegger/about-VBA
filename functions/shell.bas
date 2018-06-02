@@ -1,6 +1,6 @@
 sub main()
 
-   dim r
-   rc = shell "cmd.exe"
+   dim taskId
+   taskId = shell("cmd.exe")
 
 end sub
