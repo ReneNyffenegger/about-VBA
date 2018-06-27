@@ -2,7 +2,7 @@ option explicit
 
 sub XX()
 
-    dim cbAddr as long
+  dim cbAddr as long
    
   '
   '  addressOf is an operator, not a function.
