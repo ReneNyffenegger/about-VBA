@@ -2,12 +2,12 @@
 '      Microsoft Internet Controls
 '         c:\Windows\...\ieframe.dll
 '
-'         call application.workbooks(1).VBProject.references.addFromGuid("{EAB22AC0-30C1-11CF-A7EB-0000C05BAE0B}")
+'         call application.workbooks(1).VBProject.references.addFromGuid("{EAB22AC0-30C1-11CF-A7EB-0000C05BAE0B}", 0, 0)
 '        (Name is: SHDocVw)
 '
 '     Microsoft HTML Object Library
 '         c:\Windows\...\mshtml.tlb
-'         call application.workbooks(1).VBProject.references.addFromGuid("{3050F1C5-98B5-11CF-BB82-00AA00BDCE0B}")
+'         call application.workbooks(1).VBProject.references.addFromGuid("{3050F1C5-98B5-11CF-BB82-00AA00BDCE0B}", 0, 0)
 '        (Name is: MSHTML)
 '
 
