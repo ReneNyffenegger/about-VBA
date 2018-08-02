@@ -7,6 +7,7 @@ sub main()
 
     var = null
   ' dbl = null ' null can only be assigned to variants
+  '            ' Otherwise, a Run-time error 94 is thrown: Invalid use of Null
 
   ' If a variant is null can be tested with isNull:
     if isNull(var) then
