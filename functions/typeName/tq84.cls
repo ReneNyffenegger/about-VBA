@@ -1,0 +1,1 @@
+public aMember as double
