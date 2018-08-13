@@ -1,0 +1,1 @@
+public memberVar as string
