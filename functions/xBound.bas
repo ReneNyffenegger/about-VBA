@@ -14,8 +14,8 @@ sub main() ' {
      dim a_x_5(5)
 
     showBounds a_0_5 ' lBound: 0, uBound: 5
-  showBounds a_3_8 ' lBound: 3, uBound: 8
-  showBounds a_x_5 ' lBound: 0, uBound: 5
+    showBounds a_3_8 ' lBound: 3, uBound: 8
+    showBounds a_x_5 ' lBound: 0, uBound: 5
 
 end sub ' }
 
