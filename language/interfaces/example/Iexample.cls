@@ -3,8 +3,5 @@
 '
 option explicit
 
-public sub aSub()
-end sub
-
+public sub      aSub()
 public function aFunc(param as double)
-end function
