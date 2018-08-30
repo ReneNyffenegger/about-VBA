@@ -1,17 +1,24 @@
 option explicit
 
-sub main() ' {
+sub s(p as string)
+    select case p
+           case "1": debug.print "one"
+           case "2": debug.print "two"
+           case "3": debug.print "three"
+    end select
+    p = "3"
+end sub
 
-    dim str as string
-    str = "foo bar baz"
-    s str
-    debug.print "After calling s, str = " & str ' changed
+sub main()
 
-end sub ' }
+    dim n as string
 
-sub s(param as string) ' {
+    n = "1"  ' With paranthesis, the value is passed "byVal":
+    s(n)     ' The change of the parameter within the sub
+    s(n)     ' does not affect the value of n
 
-    debug.print "s recevied param = " & param ' foo bar baz
-    param = "changed"
+    n = "2"  ' But... without the paranthesis, the value of
+    s n      ' n is passed "byRef", that is, the value of
+    s n      ' n is changed within the sub.
 
-end sub ' }
+end sub
