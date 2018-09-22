@@ -10,7 +10,7 @@ sub main() ' {
 
     for i = lBound(arrayOfStrings) to uBound(arrayOfStrings)
 
-        debug.print arrayOfStrings(i)
+        debug.print i & ": " & arrayOfStrings(i)
 
     next i
 
