@@ -22,3 +22,15 @@ declare function vbaObjSet        lib "msvbvm60.dll" alias "__vbaObjSet"       (
 function GetMem1_(byVal addr as longPtr) as byte ' {
     GetMem1 addr, GetMem1_
 end function ' }
+
+function GetMem2_(byVal addr as longPtr) as integer ' {
+    GetMem2 addr, GetMem2_
+end function ' }
+
+function GetMem4_(byVal addr as longPtr) as long ' {
+    GetMem4 addr, GetMem4_
+end function ' }
+
+function GetMem8_(byVal addr as longPtr) as currency ' {
+    GetMem8 addr, GetMem8_
+end function ' }
