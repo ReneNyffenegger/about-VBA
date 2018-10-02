@@ -18,9 +18,6 @@ declare Function vbaVarSub        lib "msvbvm60.dll" alias "__vbaVarSub" (var1 a
 declare function vbaVarMul        lib "msvbvm60.dll" alias "__vbaVarMul" (var1 as variant, var2 as variant) as variant
 declare function vbaVarCat        lib "msvbvm60.dll" alias "__vbaVarCat" (var1 as variant, var2 as variant) as variant
 
-declare function vbaObjSetAddref  lib "msvbvm60.dll" alias "__vbaObjSetAddref" (dstObject as any, byVal srcObjPtr as long) as long
-declare function vbaObjSet        lib "msvbvm60.dll" alias "__vbaObjSet"       (dstObject as any, byVal srcObjPtr as long) as long
-
 ' vbaCopyBytes* {
 '
 '       vbaCopyBytes: similar to RtlMoveMemory although for non-overlapping memory only.
