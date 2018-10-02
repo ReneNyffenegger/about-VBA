@@ -10,11 +10,11 @@ private func(0 to 2) as longPtr
 private iUnk         as IUnknown
 
 
-private function release(this as longPtr) as long
+private function release(this as longPtr) as long ' {
     msgBox "Exiting Excel"
-end function
+end function ' }
 
-sub main()
+sub main() ' {
 
 
  '  if iUnk is nothing then
@@ -23,12 +23,10 @@ sub main()
 
     debug.print "iUnk:  " & varPtr(iUnk)
 
-    dim e as object
-
     func(2) = vba.int(addressOf release)
 
     pVtbl  = varPtr(func(0))
 
     RtlMoveMemory iUnk, varPtr(pVtbl), 4
 
-end sub
+end sub ' }
