@@ -8,6 +8,7 @@ sub main()
     debug.print objRefCnt(obj_1) ' 0
 
     set obj_1 = new Foo
+ '  debug.print "objPtr(obj_1) = " & objPtr(obj_1)
     debug.print objRefCnt(obj_1) ' 1
 
     set obj_2 = obj_1
