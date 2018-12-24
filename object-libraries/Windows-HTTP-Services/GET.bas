@@ -6,7 +6,7 @@ sub main() ' {
 
     httpReq.setTimeouts 20000, 20000, 20000, 20000
 
-    httpReq.Open "GET", "http://renenyffenegger.ch/"
+    httpReq.open "GET", "http://renenyffenegger.ch/", false
 
     debug.print (httpReq.Option(WinHttpRequestOption_UserAgentString))
   ' Mozilla/4.0 (compatible; Win32; WinHttp.WinHttpRequest.5)
