@@ -120,7 +120,7 @@ public function get_IEnumVariant_vtbl_etc (items_ as variant) as IEnumVARIANT ' 
   ' This is sort of unbelievable, but "this" must be zeroed out.
   '
   ' Don Box states the reason for this (Advanced Visual Basic 6, p. 149):
-  '    VB thinks the data in Struct needs to be  freed when the function goes out of scope VB has no
+  '    VB thinks the data in Struct needs to be freed when the function goes out of scope VB has no
   '    way of knowing that ownership of the structure has moved elsewhere. If the
   '    structure contains object or variable-size String or array types, VB will
   '    kindly free them for you when the object goes out of scope. But you are still
