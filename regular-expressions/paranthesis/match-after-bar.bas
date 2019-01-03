@@ -1,7 +1,9 @@
+option explicit
+
 sub main() ' {
 
-    debug.print numberAfterBar("foo 42 bar 99 baz 10")
-    debug.print numberAfterBar("xxx 42 yyy 99 zzz 10")
+    debug.print numberAfterBar("foo 42 bar 99 baz 10") -- 99
+    debug.print numberAfterBar("xxx 42 yyy 99 zzz 10") -- n/a
 
 end sub ' }
 
