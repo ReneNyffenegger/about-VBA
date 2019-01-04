@@ -4,7 +4,7 @@ sub main() ' {
 
    dim doc as new MSXML2.DOMDocument
 
-   doc.LoadXML ("<elemRoot>"                                  & _
+   doc.loadXML ("<elemRoot>"                                  & _
                 "  <child id='one' flagged='yes'>foo</child>" & _
                 "  <!-- comment -->"                          & _
                 "  <child id='two'>"                          & _
