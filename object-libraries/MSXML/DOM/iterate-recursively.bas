@@ -26,20 +26,18 @@ sub iterateRecursively(byRef node as variant, byVal level as long) ' {
     if node.nodeType = MSXML2.NODE_ELEMENT then
          txt = node.nodeName
     else
-         txt = node.Text
+         txt = node.text
     end if
 
     debug.print (space$(level * 4) & node.nodeTypeString & ": " & txt)
 
     dim childNode as variant
-    dim i as long
-
 
     if node.nodeType = MSXML2.NODE_ELEMENT then
 
        dim attr as MSXML2.IXMLDOMAttribute
        for each attr in node.attributes
-           debug.print (space$(level * 4 + 2) & attr.Name & " = " & attr.Value)
+           debug.print (space$(level * 4 + 2) & attr.Name & " = " & attr.value)
        next attr
 
        for each childNode in node.childNodes
