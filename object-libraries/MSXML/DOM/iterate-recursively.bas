@@ -10,7 +10,7 @@ sub main() ' {
                 "  <child id='two'>"                          & _
                 "      pre bar"                               & _
                 "     <grand-child>ABC</grand-child>"         & _
-                "      post par"                              & _
+                "      post bar"                              & _
                 "  </child>"                                  & _
                 "  <child id='three'>baz</child>"             & _
                 "</elemRoot>")
