@@ -4,7 +4,7 @@ private value as long
 
 public sub store_value(value_ as long)
 
-  ' Apprently, the »me« keyword cannot be used
+  ' Apparently, the »me« keyword cannot be used
   ' in member subs and member functions …
 
     value = value_
