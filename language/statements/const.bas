@@ -6,7 +6,7 @@ private const g_seven = 7
 public  const g_five  = 5
 
 '
-' It is possilble to assign a calculated value to
+' It is possible to assign a calculated value to
 ' a constant:
 '
 const calculated = g_seven * g_five
