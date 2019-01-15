@@ -6,8 +6,8 @@ option explicit
 ' Note: member variables are not declared with dim, rather
 ' one of the keywords public or private is used.
 '
-' If they're public, they can be accessed from »outside« ' the
-' class if private, they can only be accessed within the class.
+' If they're public, they can be accessed from »outside« the
+' class. If private, they can only be accessed within the class.
 '
 
 public  foo as double
