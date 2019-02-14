@@ -14,6 +14,7 @@ sub main()
     dim lPt   as longPtr
     dim obj   as object
     dim sgl   as single
+    dim txt   as string
     dim var   as variant
     dim xxx
 
@@ -29,6 +30,7 @@ sub main()
     debug.print "longPtr:  " & varType(lPt)    ' 3
     debug.print "object:   " & varType(obj)    ' 9
     debug.print "single:   " & varType(sgl)    ' 4
+    debug.print "string:   " & varType(txt)    ' 8
     debug.print "variant:  " & varType(var)    ' 0
     debug.print "xxx:      " & varType(xxx)    ' 0
 
