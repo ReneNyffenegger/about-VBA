@@ -1,3 +1,6 @@
+'
+'   call application.VBE.activeVBProject.references.addFromGuid("{8B217740-717D-11CE-AB5B-D41203C10000}", 1, 0)
+'
 option explicit
 
 sub propertiesOfObj(byval obj as object) ' {
