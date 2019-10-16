@@ -1,24 +1,34 @@
 option explicit
 
-sub s(p as string)
-    select case p
-           case "1": debug.print "one"
-           case "2": debug.print "two"
-           case "3": debug.print "three"
-    end select
-    p = "3"
-end sub
+sub s(p as string) ' {
+    debug.print "p = " & p
+    p = "changed"
+end sub ' }
 
-sub main()
+sub main() ' {
 
     dim n as string
 
-    n = "1"  ' With paranthesis, the value is passed "byVal":
-    s(n)     ' The change of the parameter within the sub
-    s(n)     ' does not affect the value of n
+    n = "with"     ' With parantheses, the value is passed «byVal»
+    s(n)           ' The assignment of a value to the parameter within the sub
+    s(n)           ' does not affect the value of n
 
-    n = "2"  ' But... without the paranthesis, the value of
-    s n      ' n is passed "byRef", that is, the value of
-    s n      ' n is changed within the sub.
+    n = "without"  ' But… without the parantheses, the value of
+    s n            ' n is passed «byRef», that is, it can be
+    s n            ' changed within the sub
 
-end sub
+    n = "call"     ' If the call statement is used, the value of
+    call s(n)      ' the parameter is also passed «byRef» (although
+    call s(n)      ' parantheses are required).
+
+end sub ' }
+
+'
+'   Executing main prints
+'
+'     p = with
+'     p = with
+'     p = without
+'     p = changed
+'     p = call
+'     p = changed
