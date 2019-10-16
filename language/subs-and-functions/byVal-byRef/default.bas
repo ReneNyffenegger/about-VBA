@@ -22,7 +22,6 @@ sub main() ' {
     call s(n)      ' parantheses are required).
 
 end sub ' }
-
 '
 '   Executing main prints
 '
