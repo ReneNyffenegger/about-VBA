@@ -1,6 +1,16 @@
-sub main()
+option explicit
 
-   dim taskId
-   taskId = shell("cmd.exe")
+global PID as long
 
-end sub
+sub startTask() ' {
+
+   PID  = shell("notepad.exe", vbNormalNoFocus)
+   debug.print("process id = " & PID)
+
+end sub ' }
+
+sub stopTask() ' {
+
+    shell "taskkill /pid " & PID
+
+end sub ' }
