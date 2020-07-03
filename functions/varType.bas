@@ -18,7 +18,7 @@ sub main()
     dim var   as variant
     dim xxx
 
-    debug.print "array:    " & varType(ary)    ' 8194 (= 8192 (vbArray) + 2 (vbInteger) )
+    debug.print "array:    " & varType(ary)    ' 8194 (= 8192 (`vbArray`) + 2 (`vbInteger`) )
     debug.print "byte:     " & varType(byt)    ' 17
     debug.print "boolean:  " & varType(boo)    ' 11
     debug.print "currency: " & varType(cur)    ' 6
@@ -36,7 +36,7 @@ sub main()
 
     var = 12
     xxx = 49.31
-    debug.print "variant:  " & varType(var)    ' 2
+    debug.print "variant:  " & varType(var)    ' 2   (Note that varType does not return 12 (= `vbVariant`, but the value of data that the variant stores)
     debug.print "xxx:      " & varType(xxx)    ' 5
 
 end sub
