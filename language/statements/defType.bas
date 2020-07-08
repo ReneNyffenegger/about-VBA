@@ -7,19 +7,26 @@ defStr  s
 sub main() ' {
 
   '
-  ' Variables that are local to procedures still need to be declared
+  ' Variables that are local to procedures still need to be declared with a dim statement
   '
-    dim iNum as long
+    dim iVar
+    dim jVar
+    dim sVar
 
-    for iNum = 1 to 10 ' {
+    dim i : for i = 1 to 10 ' {
       
-        if iNum = 5 then ' {
-           S1(iNum)
-           S2(iNum)
-           S3(iNum)
+        if i = 5 then ' {
+           S1(i)
+           S2(i)
+           S3(i)
+
+           debug.print("type of iVar = " & typeName(iVar))
+           debug.print("type of jVar = " & typeName(jVar))
+           debug.print("type of sVar = " & typeName(sVar))
+
         end if ' }
 
-    next iNum ' }
+    next i ' }
 
 end sub ' }
 
@@ -40,3 +47,6 @@ end sub ' }
 '   type of iParam = Long
 '   type of jParam = Integer
 '   type of sParam = String
+'   type of iVar = Long
+'   type of jVar = Integer
+'   type of sVar = String
