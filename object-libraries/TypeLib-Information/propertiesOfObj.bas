@@ -1,5 +1,14 @@
 '
-'   call application.VBE.activeVBProject.references.addFromGuid("{8B217740-717D-11CE-AB5B-D41203C10000}", 1, 0)
+'   Adding the reference to the typelib:
+'
+'    It seems that earlier versions of Windows or Office were able to add the type lib from a (registered?) guid:
+'      - application.VBE.activeVBProject.references.addFromGuid "{8B217740-717D-11CE-AB5B-D41203C10000}", 1, 0
+'
+'    wheares newer versions of Windows or Office require an installation of Visual Studio(?):
+'   
+'      - application.VBE.activeVBProject.references.AddFromFile "c:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\vstlbinf.dll"
+'        
+'
 '
 option explicit
 
