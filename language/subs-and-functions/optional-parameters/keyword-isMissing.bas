@@ -1,4 +1,3 @@
-' runVBAFilesInOffice.vbs -word %CD%\keyword-isMissing -c main
 '
 ' isMissing checks whether an optional parameter was passed
 '
@@ -7,18 +6,20 @@
 
 option explicit
 
-sub main() 
+sub main() ' {
 
   call xyz("one", "two")
   call xyz("apple")
   call xyz(param_2 := "banana")
   call xyz
+  call xyz(param_2 :=  null)
 
   activeDocument.saved = true 
 
- end sub 
+ end sub  ' }
  
 
+' xyz {
 private sub xyz (                   _ 
        optional param_1 as variant, _
        optional param_2 as variant  _ 
@@ -38,4 +39,4 @@ private sub xyz (                   _
 
      selection.typeText chr(13)
 
- end sub 
+end sub  ' }
