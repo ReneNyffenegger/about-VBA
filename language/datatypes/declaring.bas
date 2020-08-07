@@ -7,7 +7,7 @@ const    c_word   = "foo"           ' Declaring a constant. Type of variable is 
 sub dimTest()
 
     dim var           as string     ' Declaring a "normal" variable
-    dim str_3         as string * 3 ' Fixed width string
+    dim str_3         as string * 3 ' Fixed-width string
     dim ary()         as integer    ' Declaring an array with variable count of elements
     dim ary_5(1 to 5) as integer    ' Declaring a fixed count of elements (here: 5)
 
