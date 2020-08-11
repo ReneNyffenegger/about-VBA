@@ -21,13 +21,13 @@ sub main() ' {
 
     if err.number <> 0 then ' {
        debug.print ("Could not perform http request")
-       debug.print (err.Number & ": " & Err.Source)
-       debug.print (err.Description)
+       debug.print (err.number & ": " & err.source)
+       debug.print (err.description)
        exit sub
     end if ' }
 
     if httpReq.Status <> 200 then
-       debug.print (httpReq.Status & ": " & httpReq.StatusText)
+       debug.print (httpReq.status & ": " & httpReq.statusText)
     end if
 
     debug.print (httpReq.responseText)
