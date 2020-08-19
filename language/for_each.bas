@@ -12,4 +12,3 @@ sub main()
   activeDocument.saved = true
 
 end sub
-
