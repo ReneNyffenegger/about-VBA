@@ -1,6 +1,6 @@
 option explicit
 
-sub main()
+sub main() ' {
 
     dim fOne, fTwo, fThree as integer
 
@@ -16,9 +16,9 @@ sub main()
     close# fTwo
     close# fThree
 
-end sub
+end sub ' }
 
-function openFile(fileName as string)
+function openFile(fileName as string) ' {
   '
   ' Open a file, use freeFile to determine next
   ' file number
@@ -31,4 +31,4 @@ function openFile(fileName as string)
     
     openFile = fn
 
-end function
+end function ' }
