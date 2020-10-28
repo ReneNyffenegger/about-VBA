@@ -1,6 +1,5 @@
 option explicit
 
-
 sub main() ' {
 
     dim v1(1 to 3) as double
@@ -14,8 +13,16 @@ sub main() ' {
     v2(2) = -2
     v2(3) = -1
 
+  '
+  ' Call «strongly typed» version of function:
+  '
     debug.print(dot_product_explicit_datatype(v1             , v2               ))
-    debug.print(dot_product_variant          (array(1, 3, -5), array(4, -2, -1) ))
+
+  '
+  ' Call «weakly typed» version of function.
+  ' Note how easy it is to pass the values
+  ' of the array to the function:
+  '
     debug.print(dot_product_variant          (array(1, 3, -5), array(4, -2, -1) ))
 
 end sub ' }
