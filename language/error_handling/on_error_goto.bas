@@ -7,7 +7,6 @@ sub main()
   selection.font.name = "Courier New"
 
   selection.typeText "main" & chr(13)
-
   selection.typeText "-> A()" & chr(13)
 
   call A()
@@ -19,7 +18,6 @@ end sub
 sub A()
 
   selection.typeText "  A" & chr(13)
-
   selection.typeText "  -> B()" & chr(13)
 
   call B()
@@ -29,7 +27,6 @@ end sub
 sub B()
 
   selection.typeText "    B" & chr(13)
-
   selection.typeText "    -> C()" & chr(13)
 
   call C()
@@ -41,11 +38,9 @@ sub C()
   on error goto err_C
 
   selection.typeText "      C"  & chr(13)
-
   selection.typeText "      -> D()"  & chr(13)
 
   call D()
-
 
  done_C:
 
