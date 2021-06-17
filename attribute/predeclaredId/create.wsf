@@ -1,0 +1,30 @@
+<job>
+<script language="VBScript" src="../../VBS-MS-Office-App-Creator/create-MS-Office-app.vbs" />
+<script language="VBScript">
+
+   option explicit
+
+   dim app
+   dim xls
+   set xls = createOfficeApp("excel", currentDir() & "created.xlsm")
+
+   if xls is nothing then ' {
+      wscript.echo("Could not create excel worksheet.")
+      wscript.quit(-1)
+   end if ' }
+
+   set app = xls.application
+
+   insertModule app, currentDir() & "func.vb"        , "func"       , 1
+   insertModule app, currentDir() & "predeclared.cls", "predeclared", 2
+ '
+ ' Show VB editor
+ '
+   app.VBE.mainWindow.visible = true
+
+   xls.save
+   app.run "main"
+
+   createObject("WScript.Shell").appActivate(app.caption)
+
+</script></job>
