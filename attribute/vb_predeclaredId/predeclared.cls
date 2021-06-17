@@ -2,9 +2,6 @@ attribute vb_predeclaredId   = true
 ' attribute vb_globalNameSpace = true
 
 option explicit
-'
-' attribute vb_globalNameSpace = true
-'
 
 private member as long
 
