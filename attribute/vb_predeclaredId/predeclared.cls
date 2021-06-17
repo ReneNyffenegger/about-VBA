@@ -1,5 +1,4 @@
 attribute vb_predeclaredId   = true
-' attribute vb_globalNameSpace = true
 
 option explicit
 
