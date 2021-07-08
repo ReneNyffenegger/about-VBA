@@ -1,6 +1,3 @@
-'
-'  vim: ft=basic
-'
 option explicit
 
 public sub      aSub()                 : end sub
