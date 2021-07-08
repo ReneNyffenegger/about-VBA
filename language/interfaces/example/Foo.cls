@@ -1,6 +1,3 @@
-'
-'  vim: ft=basic
-'
 option explicit
 
 implements Iexample
