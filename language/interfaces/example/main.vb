@@ -1,6 +1,6 @@
 option explicit
 
-sub main()
+sub runExample()
 
     dim ex_1 as Iexample
     dim ex_2 as Iexample

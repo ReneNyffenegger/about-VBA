@@ -1,0 +1,29 @@
+<job>
+<script language="VBScript" src="..\..\..\VBS-MS-Office-App-Creator\create-MS-Office-app.vbs" />
+<script language="VBScript">
+
+   option explicit
+
+   dim app
+   dim xls
+
+   set xls = createOfficeApp("excel", currentDir() & "created.xlsm")
+   if xls is nothing then ' {
+      wscript.echo("Could not create excel worksheet.")
+      wscript.quit(-1)
+   end if ' }
+
+   set app = xls.application
+
+   insertModule app, currentDir() & "Iexample.cls", "Iexample", 2
+   insertModule app, currentDir() & "Foo.cls"     , "Foo"     , 2
+   insertModule app, currentDir() & "Bar.cls"     , "Bar"     , 2
+   insertModule app, currentDir() & "main.vb"     , "example" , 1
+
+   app.run "runExample"
+
+   xls.save
+
+   createObject("WScript.Shell").appActivate(app.caption)
+
+</script> </job>
