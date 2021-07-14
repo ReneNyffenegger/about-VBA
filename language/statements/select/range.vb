@@ -15,7 +15,7 @@ private function gaugeNumber(i as long) as string ' {
       case   1 to   9: gaugeNumber = i & " is a small number"
       case  10 to  99: gaugeNumber = i & " is a medium number"
       case 100 to 999: gaugeNumber = i & " is a large number"
-      case else      : gaugeNumber = "I won't say something about " & i
+      case else      : gaugeNumber = "I won't say anything about " & i
   end select
 
-end function
+end function ' }
